@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { FaSearch } from 'react-icons/fa';
 
 import api from '../../services/api';
 
@@ -88,7 +89,11 @@ export default class Repository extends Component {
     } = this.state;
 
     if (loading) {
-      return <Loading>Carregando</Loading>;
+      return (
+        <Loading>
+          <FaSearch />
+        </Loading>
+      );
     }
 
     return (

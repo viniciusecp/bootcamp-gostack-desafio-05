@@ -1,13 +1,18 @@
 import styled from 'styled-components';
 
 export const Loading = styled.div`
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
+  /* color: #fff; */
+  /* font-size: 30px; */
+  /* font-weight: bold; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  svg {
+    font-size: 100px;
+    color: #fff;
+  }
 `;
 
 export const Owner = styled.header`
